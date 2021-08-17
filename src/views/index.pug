@@ -1,0 +1,29 @@
+doctype html
+html(lang='en')
+  include layout/header.pug
+  body#page-top
+    // Navigation
+    include layout/nav.pug
+    // Page Content
+    .container-fluid.p-0
+      // About
+      include about.pug
+      
+      // Experience
+      include experience.pug
+      
+      // Education
+      include education.pug
+      // Skills
+      include skills.pug
+      
+      // Interests
+      include interest.pug
+      
+      // Awards
+      include awards.pug
+      
+    // Bootstrap core JS
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js')
+    // Core theme JS
+    script(src='js/scripts.js')
