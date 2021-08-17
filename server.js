@@ -31,7 +31,7 @@ app.post('/forms', async (req, res) => {
   name = req.body.name
   let tester = req.body.email
 
-  
+
   try {
     const transporter = nodemailer.createTransport(
       nodemailerSendgrid({
@@ -65,7 +65,9 @@ app.post('/forms', async (req, res) => {
 });
 
 app.get('/success', (req, res) => {
-  res.render('success', {name})
+  res.render('success', {
+    name
+  })
 })
 
 
