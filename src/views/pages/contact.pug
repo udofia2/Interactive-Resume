@@ -1,0 +1,47 @@
+section#contact.resume-section
+        .resume-section-content
+          .container
+            h2 Contact me
+            p
+              | Please use your real email during testing to receive confirmation mail. Wait a second and you will get a mail in your mail box. Thank you.
+          .row(data-aos='fade-in')
+            .col-lg-5.d-flex.align-items-stretch
+              .info
+                .address
+                  i.icofont-google-map
+                  h4 Location:
+                  p Lagos, Nigeria.
+                .email
+                  i.icofont-envelope
+                  h4 Email:
+                  p hello@ufiar.com | enalsy22@gmail.com
+                .phone
+                  i.icofont-phone
+                  h4 Call:
+                  p +234 813 702 4087
+            .col-lg-7.mt-5.mt-lg-0.d-flex.align-items-stretch
+              form.php-email-form(action='forms' method='post' role='form')
+                .form-row
+                  .form-group.col-md-12
+                    label(for='name') Your Name
+                    input#name.form-control(type='text' name='name' data-rule='minlen:4' required data-msg='Please enter at least 4 chars')
+                    .validate
+                  .form-group.col-md-12
+                    label(for='name') Your Email
+                    input#email.form-control(type='email' name='email' data-rule='email' required data-msg='Please enter a valid email')
+                    .validate
+                .form-group
+                  label(for='name') Subject
+                  input#subject.form-control(type='text' name='subject' data-rule='minlen:4'  data-msg='Please enter at least 8 chars of subject' required)
+                  .validate
+                .form-group
+                  label(for='name') Message
+                  textarea.form-control(name='message' rows='10' data-rule='required' required data-msg='Please write something for us')
+                  .validate
+                //- .mb-3
+                //-   .spinner-border.text-warning 
+                //-     span.visually-hidden Loading
+                //-   .error-message #{msg}
+                //-   .sent-message Your message has been sent. Thank you!
+                .text-center
+                  button(type='submit') Send Message

@@ -1,0 +1,47 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description' content='')
+    meta(name='author' content='udofia abasiodiong')
+    title success form - congratulations
+    link(rel='icon' type='image/x-icon' href='assets/img/favicon.ico')
+    // Font Awesome icons (free version)
+    script(src='https://use.fontawesome.com/releases/v5.15.3/js/all.js' crossorigin='anonymous')
+    // Google fonts
+    link(href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700' rel='stylesheet' type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i' rel='stylesheet' type='text/css')
+    // Core theme CSS (includes Bootstrap)
+    link(href='css/styles.css' rel='stylesheet')
+    
+  body#page-top
+    // Navigation
+    nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
+      a.navbar-brand.js-scroll-trigger(href='/')
+        span.d-block.d-lg-none Abasiodiong Udofia
+        span.d-none.d-lg-block
+          img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile.png' alt='...')
+      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarResponsive.collapse.navbar-collapse
+        ul.navbar-nav
+          li.nav-item
+            a.nav-link.js-scroll-trigger(href='/') Home
+          
+    //Greeting
+    section#about.resume-section
+      .jumbotron.text-center
+        h1.display-3.text-success Thank You 
+          span.text-secondary #{name}! &#x1f917;
+        p.lead
+          strong I really appreciate you
+          |  for taking the time to testing my form implementation. Kindly check your <strong>spam inbox</strong> to see the message. Thank you
+        hr
+        p
+          | 
+        p.lead
+          a.btn.btn-primary.btn-sm.text-light(href='/' role='button') Continue to homepage
+
+    // FOOTER
+    include layout/footer.pug
